@@ -1,4 +1,4 @@
-packge com.example.meuapp
+package com.example.meuapp
 
 import android.os.Build
 import android.os.Bundle
