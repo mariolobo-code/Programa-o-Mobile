@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
           val layout = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            gravity = gravity.CENTER_HORIZONTAL
+            gravity = Gravity.CENTER_HORIZONTAL
             setPadding(32, 48, 32, 32)
           }
 
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
           }
 
 Botao.setOnClickListener { 
-  resposta.text = "olá, ${nome.text.toString().trim()}!"
+  resposta.text = "Olá, ${nome.text.toString().trim()}!"
     }
 
     layout.addView(titulo)
