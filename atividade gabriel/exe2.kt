@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(saveInstanceState: Bunle?) {
+    override fun onCreate(saveInstanceState: Bundle?) {
           super.onCreate(savedInstanceState)
 
           val informacoes = """
@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
             """.trimIndent()
 
                 val texto = TextView(this)
-                texto.text = informaçoes
-                texto.textSize + 18f
+                texto.text = informacoes
+                texto.textSize = 18f
                 texto.setPadding(32, 32, 32, 32)
 
                 setContentView(texto)
