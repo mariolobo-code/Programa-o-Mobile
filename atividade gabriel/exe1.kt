@@ -1,15 +1,15 @@
-packge com.example.meuapp
+package com.example.meuapp
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(saveInstanceAtate: Bunle?) {
+    override fun onCreate(saveInstanceState: Bunle?) {
           super.onCreate(savedInstanceState)
 
-          val mensagem + TextVieW(this)
-          mensagem.text = "ola, Mobile!"
+          val mensagem = TextVieW(this)
+          mensagem.text = "Olá, Mobile!"
           mensagem.textSize = 24f
 
           setContentView(mensagem)
