@@ -9,16 +9,16 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bunle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
           super.onCreate(savedInstanceState)
 
           val layout = LinearLayout(this).apply {
-            otientation = LinearLayout.VERTICAL
-            Gravity = Gravity.CENTER_HORIZONTAL
+            orientation = LinearLayout.VERTICAL
+            gravity = gravity.CENTER_HORIZONTAL
             setPadding(32, 48, 32, 32)
           }
 
-     val titulo = TextView(this).appy {
+     val titulo = TextView(this).apply {
         text = "Boas-vindas"
         textSize = 24f
      }
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
           }
 
-Botao.SetOnClickListener { 
-  resposta.text = "ola, ${nome.text.toString().trim()}!"
+Botao.setOnClickListener { 
+  resposta.text = "olá, ${nome.text.toString().trim()}!"
     }
 
     layout.addView(titulo)
