@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bunle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
           super.onCreate(savedInstanceState)
 
           val layout = LinearLayout(this).apply {
@@ -33,11 +33,14 @@ class MainActivity : AppCompatActivity() {
           
           botao.setOnckListener {
             val terefa = valor.text.toString().trim()
+            
+           respost.text = if (tarefa.isEmpty()) {
             "Digite uma tarefa antes de adicionar."
           }else {
-            "Trefa adicionada: $tarefa"
+            "Tarefa adicionada: $tarefa"
             }
      }
+          
     layout.addView(valor)
     layout.addView(botao)
     layout.addView(resposta)
