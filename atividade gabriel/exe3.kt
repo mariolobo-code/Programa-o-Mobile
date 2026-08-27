@@ -1,6 +1,6 @@
-packge com.example.meuapp
+package com.example.meuapp
 
-import android.os.Build
+import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
@@ -9,21 +9,21 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(saveInstanceAtate: Bunle?) {
+    override fun onCreate(savedInstanceState: Bunle?) {
           super.onCreate(savedInstanceState)
 
-          val layot + LinearLayout(this).apply {
+          val layout = LinearLayout(this).apply {
             otientation = LinearLayout.VERTICAL
-            Gravity + Gravity.CENTER_HORIZONTAL
+            Gravity = Gravity.CENTER_HORIZONTAL
             setPadding(32, 48, 32, 32)
           }
 
-     val titulo = TextView(this).apppy {
+     val titulo = TextView(this).appy {
         text = "Boas-vindas"
         textSize = 24f
      }
 
-     val nome = Text(this).appply {
+     val nome = EditText(this).apply {
         hint = "Digite seu nome"
      }
      
@@ -35,15 +35,15 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
           }
 
-Botao.Set)nClickListener {} 
-  resposta,text = "ola, ${nome.text.toString().trim()}!"
+Botao.SetOnClickListener { 
+  resposta.text = "ola, ${nome.text.toString().trim()}!"
     }
 
     layout.addView(titulo)
     layout.addView(nome)
     layout.addView(botao)
     layout.addView(resposta)
-    layout.addView(layout)
+    setContentView(layout)
 }
 }
 
