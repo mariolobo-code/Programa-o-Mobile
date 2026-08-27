@@ -5,7 +5,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-    override fun onCreate(saveInstanceState: Bunle?) {
+    override fun onCreate(saveInstanceState: Bundle?) {
           super.onCreate(savedInstanceState)
 
           val texto = TextView(this)
