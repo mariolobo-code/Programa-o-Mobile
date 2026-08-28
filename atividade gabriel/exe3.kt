@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
           }
 
-Botao.setOnClickListener { 
+botao.setOnClickListener { 
   resposta.text = "Olá, ${nome.text.toString().trim()}!"
     }
 
