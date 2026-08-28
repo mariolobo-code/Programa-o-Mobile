@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
             textSize = 18f
           }
           
-          botao.setOnckListener {
-            val terefa = valor.text.toString().trim()
+          botao.setOnCkListener {
+            val tarefa = valor.text.toString().trim()
             
-           respost.text = if (tarefa.isEmpty()) {
+           resposta.text = if (tarefa.isEmpty()) {
             "Digite uma tarefa antes de adicionar."
           }else {
             "Tarefa adicionada: $tarefa"
@@ -44,6 +44,6 @@ class MainActivity : AppCompatActivity() {
     layout.addView(valor)
     layout.addView(botao)
     layout.addView(resposta)
-    layout.addView(layout)
+    setContentView(layout)
     }
 }
